@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDP Mouse Event</title>
+<style>
+    .table-border{
+        width: 30%;
+    }
+    .bordered{
+        border: 1px dashed #333;
+    }
+    .span-2 {
+        padding: 5px 7px;
+        width: 30%;
+        text-align: center;
+    }
+    .span-1 {
+        padding: 10px;
+        text-align: center;
+    }
+    .p-left{
+        padding-left:10px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h4> Different Types of Mouse Event</h4>
+        <table class="table-border">
+            <tbody>
+                <tr>
+                    <td class="bordered span-2">
+                        <button id="mouse-click">Click me!</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user clicks an element.
+                    </td>
+                </tr>
+            </tbody>
+     
+
+    <script> 
+        const mouseclick = document.getElementById('mouse-click');
+
+        mouseclick.addEventListener('click', () => {
+            alert('You clicked the button');
+        });
+    </script>
+
+        <tbody>
+            <tr>
+                <td class="bordered span-2">
+                    <button id="mouse-dblclick">Double Click me!</button>
+                </td>
+                <td class="bordered p-left">
+                    Fired when the user double clicks an element.
+                </td>
+            </tr>
+        </tbody>
+</div>
+
+<script> 
+    const mouseclick2 = document.getElementById('mouse-dblclick');
+
+    mouseclick2.addEventListener('dblclick', () => {
+        alert('You double clicked the button');
+    });
+</script>
+
+  <tbody>
+            <tr>
+                <td class="bordered span-2">
+                    <button id="mouse-down">Mouse Down Event!</button>
+                </td>
+                <td class="bordered p-left">
+                    Fired when the user presses the mouse button down.
+                </td>
+            </tr>
+        </tbody>
+</div>
+
+<script> 
+    const mouseclick3 = document.getElementById('mouse-down');
+
+    mouseclick3.addEventListener('mousedown', () => {
+        alert('You pressed down the mouse');
+    });
+</script>
+
+<tbody>
+    <tr>
+        <td class="bordered span-2">
+            <button id="mouse-up">Mouse Up Event!</button>
+        </td>
+        <td class="bordered p-left">
+            Fired when the user presses the mouse button up.
+        </td>
+    </tr>
+</tbody>
+</div>
+
+<script> 
+const mouseclick4 = document.getElementById('mouse-up');
+
+mouseclick4.addEventListener('mouseup', () => {
+alert('You pressed up the mouse');
+});
+</script>
+
+<tbody>
+    <tr>
+        <td class="bordered span-1">
+        <button id="mouse-over">Mouse Over</button>
+        </td>
+        <td class="bordered p-left">
+            Fired when the user moves the mouse over an element.
+        </td>
+    </tr>
+</tbody>
+</div>
+
+<script> 
+const mouseclick5 = document.getElementById('mouse-over');
+
+mouseclick5.addEventListener('mouseover', () => {
+alert('You move the mouse over an element');
+});
+
+</script>
+
+<tbody>
+    <tr>
+        <td class="bordered span-1">
+        <button id="mouse-out">Mouse Out</button>
+        </td>
+        <td class="bordered p-left">
+            Fired when the user moves the mouse out an element.
+        </td>
+    </tr>
+</tbody>
+</div>
+
+<script> 
+const mouseclick6 = document.getElementById('mouse-out');
+
+mouseclick6.addEventListener('mouseout', () => {
+alert('You move the mouse out an element');
+});
+</script>
+
+<tbody>
+    <tr>
+        <td class="bordered span-1">
+        <button id="mouse-m">Mouse Move</button>
+        </td>
+        <td class="bordered p-left">
+            Fired when the user moves the mouse over an element.
+        </td>
+    </tr>
+</tbody>
+</div>
+
+<script> 
+const mouseclick7 = document.getElementById('mouse-m');
+
+mouseclick7.addEventListener('mousemove', () => {
+    
+alert('You move the mouse over an element');
+});
+</script>
+</table>
+</body>
+</html>
+
